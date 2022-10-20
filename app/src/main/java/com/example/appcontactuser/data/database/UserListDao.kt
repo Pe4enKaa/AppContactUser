@@ -5,7 +5,6 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.example.appcontactuser.domain.UserItem
 
 @Dao
 interface UserListDao {
@@ -20,5 +19,5 @@ interface UserListDao {
     suspend fun deleteUserItem(userItemId: Int)
 
     @Query("SELECT * FROM user_items WHERE id=:userItemId LIMIT 1")
-    suspend fun getShopItem(userItemId: Int): UserItemDbModel
+    suspend fun getUserItem(userItemId: Int): UserItemDbModel
 }
