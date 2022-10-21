@@ -9,7 +9,7 @@ import com.example.appcontactuser.domain.GetUserListUseCase
 import com.example.appcontactuser.domain.UserItem
 import kotlinx.coroutines.launch
 
-class UserListViewModel(application: Application): AndroidViewModel(application) {
+class MainViewModel(application: Application): AndroidViewModel(application) {
 
     private val repository = UserListRepositoryImpl(application)
 
