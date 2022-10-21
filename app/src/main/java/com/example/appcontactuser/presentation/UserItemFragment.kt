@@ -8,13 +8,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
+import androidx.lifecycle.ViewModelProvider
 import com.example.appcontactuser.R
 import com.example.appcontactuser.databinding.UserItemFragmentBinding
 import com.example.appcontactuser.domain.UserItem
 
 class UserItemFragment: Fragment() {
 
-    private lateinit var viewModel: UserItemViewModel
+    private val viewModel: UserItemViewModel by viewModels()
 
     private lateinit var binding: UserItemFragmentBinding
 
