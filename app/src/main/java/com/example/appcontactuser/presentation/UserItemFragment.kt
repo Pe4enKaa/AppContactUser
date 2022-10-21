@@ -224,7 +224,11 @@ class UserItemFragment: Fragment() {
         viewModel.getShopItem(userItemId)
 
         viewModel.userItem.observe(viewLifecycleOwner) {
+            binding.etSurname.setText(it.surname)
             binding.etName.setText(it.name)
+            binding.etPatronymic.setText(it.patronymic)
+            binding.etDataOfBirth.setText(it.dataOfBirth)
+            binding.etEmail.setText(it.email)
             binding.etPhoneNumber.setText(it.phoneNumber.toString())
         }
 
