@@ -12,9 +12,7 @@ class UserListMapper {
         patronymic = userItem.patronymic,
         dataOfBirth = userItem.dataOfBirth,
         email = userItem.email,
-        phoneNumber = userItem.phoneNumber,
-        login = userItem.login,
-        password = userItem.password
+        phoneNumber = userItem.phoneNumber
     )
 
     fun mapDbModelToEntity(userItemDbModel: UserItemDbModel): UserItem = UserItem(
@@ -24,9 +22,7 @@ class UserListMapper {
         patronymic = userItemDbModel.patronymic,
         dataOfBirth = userItemDbModel.dataOfBirth,
         email = userItemDbModel.email,
-        phoneNumber = userItemDbModel.phoneNumber,
-        login = userItemDbModel.login,
-        password = userItemDbModel.password
+        phoneNumber = userItemDbModel.phoneNumber
     )
 
     fun mapListDbModelToListEntity(list: List<UserItemDbModel>) = list.map {

@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">AppContactUser</string>
+    <string name="error_input_phone_number">Invalid phone number</string>
+    <string name="error_input_name">Invalid name</string>
+    <string name="error_input_surname">Invalid surname</string>
+    <string name="error_input_patronymic">Invalid patronymic</string>
+    <string name="error_input_data_of_birth">Invalid data of birth</string>
+    <string name="error_input_email">Invalid email</string>
 </resources>

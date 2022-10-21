@@ -12,7 +12,7 @@ class UserListAdapter: ListAdapter<UserItem, UserItemViewHolder>(UserItemDiffCal
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UserItemViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(
-            R.layout.item_user,
+            VIEW_TYPE_LAYOUT,
             parent,
             false
         )
@@ -27,10 +27,12 @@ class UserListAdapter: ListAdapter<UserItem, UserItemViewHolder>(UserItemDiffCal
         }
 
         holder.tvName.text = userItem.name
-        holder.tvPhoneNumber.text = userItem.phoneNumber
+        holder.tvPhoneNumber.text = userItem.phoneNumber.toString()
     }
 
     companion object{
         const val MAX_POOL_SIZE = 30
+
+        const val VIEW_TYPE_LAYOUT = R.layout.item_user
     }
 }

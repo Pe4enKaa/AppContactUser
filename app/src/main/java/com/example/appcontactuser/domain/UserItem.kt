@@ -7,9 +7,7 @@ data class UserItem(
     val patronymic : String,
     val dataOfBirth : String,
     val email : String,
-    val phoneNumber : String,
-    val login : String,
-    val password : Int,
+    val phoneNumber : Long,
     val id: Int = UNDEFINED_ID
 ) {
     companion object {

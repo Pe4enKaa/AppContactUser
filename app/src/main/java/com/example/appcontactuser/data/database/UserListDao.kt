@@ -15,9 +15,9 @@ interface UserListDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun addUserItem(userItemDbModel: UserItemDbModel)
 
-    @Query("DELETE FROM user_items WHERE id=:userItemId")
+    @Query("DELETE FROM user_items WHERE id = :userItemId")
     suspend fun deleteUserItem(userItemId: Int)
 
-    @Query("SELECT * FROM user_items WHERE id=:userItemId LIMIT 1")
+    @Query("SELECT * FROM user_items WHERE id = :userItemId LIMIT 1")
     suspend fun getUserItem(userItemId: Int): UserItemDbModel
 }

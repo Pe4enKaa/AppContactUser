@@ -12,7 +12,5 @@ data class UserItemDbModel(
     val patronymic : String,
     val dataOfBirth : String,
     val email : String,
-    val phoneNumber : String,
-    val login : String,
-    val password : Int
+    val phoneNumber : Long,
 )
