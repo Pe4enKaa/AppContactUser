@@ -28,7 +28,7 @@
             android:textColor="@color/white"
             android:textSize="16sp"
             android:textStyle="bold"
-            tools:text = "Мамед"/>
+            tools:text = "ExampleName"/>
 
         <TextView
             android:id="@+id/tv_phone_number"

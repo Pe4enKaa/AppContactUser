@@ -164,7 +164,7 @@ class UserItemViewModel(application: Application) : AndroidViewModel(application
         var result = true
 
         if (surname.isBlank()) {
-            _errorInputName.value = true
+            _errorInputSurname.value = true
             result = false
         }
 
@@ -174,17 +174,17 @@ class UserItemViewModel(application: Application) : AndroidViewModel(application
         }
 
         if (patronymic.isBlank()) {
-            _errorInputName.value = true
+            _errorInputPatronymic.value = true
             result = false
         }
 
         if (dataOfBirth.isBlank()) {
-            _errorInputName.value = true
+            _errorInputDataOfBirth.value = true
             result = false
         }
 
         if (email.isBlank()) {
-            _errorInputName.value = true
+            _errorInputEmail.value = true
             result = false
         }
 

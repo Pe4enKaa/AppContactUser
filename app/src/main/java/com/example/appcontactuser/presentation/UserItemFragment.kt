@@ -18,7 +18,8 @@ class UserItemFragment: Fragment() {
 
     private val viewModel: UserItemViewModel by viewModels()
 
-    private lateinit var binding: UserItemFragmentBinding
+    private var _binding: UserItemFragmentBinding? = null
+    private val binding get() = _binding!!
 
     private lateinit var onEditingFinishedListener: OnEditingFinishedListener
 
@@ -45,7 +46,7 @@ class UserItemFragment: Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = UserItemFragmentBinding.inflate(inflater)
+        _binding = UserItemFragmentBinding.inflate(inflater, container, false)
         return binding.root
     }
 

@@ -6,4 +6,11 @@
     <string name="error_input_patronymic">Invalid patronymic</string>
     <string name="error_input_data_of_birth">Invalid data of birth</string>
     <string name="error_input_email">Invalid email</string>
+    <string name="user_contact_info">User Contact Info</string>
+    <string name="add_new_user_item">Add new user item</string>
+    <string name="login">Login:</string>
+    <string name="password">Password:</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="error_input_login">Invalid login</string>
+    <string name="error_input_password">Invalid password</string>
 </resources>
